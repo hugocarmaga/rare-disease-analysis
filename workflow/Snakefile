@@ -1,0 +1,10 @@
+configfile: "config/config.yaml"
+
+include: "rules/exclusive-vars.smk"
+
+rule all:
+    input:
+        expand("results/vcfs/{intersect}/{intersect}_exclusive.vcf.gz", intersect = [i for i in config["intersections"].keys()]),
+        expand("results/realignment/plots/seqID_distribution-log_{intersect}.svg", intersect = [i for i in config["intersections"].keys()]),
+        expand("results/af_comparison/af-distribution-saga-{intersect}.svg", intersect = [i for i in config["intersections"].keys()]),
+        expand("results/realignment/gaf/{intersect}_not-found_wholeLen.gaf", intersect = [i for i in config["intersections"].keys()])

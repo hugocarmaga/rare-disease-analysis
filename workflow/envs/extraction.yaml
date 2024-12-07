@@ -1,0 +1,9 @@
+name: extraction
+channels:
+  - conda-forge
+  - bioconda
+  - main
+dependencies:
+  - pyfastx=2.1.0
+  - bcftools=1.21
+  - graphaligner=1.0.19
