@@ -1,6 +1,6 @@
 # Rare Disease SV filtering pipeline
 
-This pipeline is meant to get some statistics on rare disease samples' SVs after comparing them with big SV resources, such as [SAGA] and [HGSVC3].
+This pipeline is meant to filter and get some statistics on rare disease samples' SVs after comparing them with big SV resources, such as [SAGA] and [HGSVC3].
 It builds on results from this [callset comparison pipeline].
 
 ## System Requirements
