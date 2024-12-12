@@ -1,7 +1,7 @@
 # Rare Disease SV filtering pipeline
 
 This pipeline is meant to filter and get some statistics on rare disease samples' SVs after comparing them with big SV resources, such as [SAGA] and [HGSVC3].
-It builds on results from this [callset comparison pipeline].
+It builds on results from this [callset comparison pipeline], which in turn uses the VCF files produced by this [variant calling pipeline].
 
 ## System Requirements
 
@@ -53,3 +53,4 @@ $ snakemake -j <cores> --use-conda
 [SAGA]: https://doi.org/10.1101/2024.04.18.590093
 [HGSVC3]: https://doi.org/10.1101/2024.09.24.614721
 [callset comparison pipeline]: https://github.com/eblerjana/callset-comparison
+[variant calling pipeline]: https://github.com/hugocarmaga/variant-calling
